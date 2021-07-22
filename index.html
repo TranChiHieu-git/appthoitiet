@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/moment.js"></script>
+    <script src="./js/index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css"/>
+</head>
+<body>
+<div class="container">
+    <div class="main-section">
+        <div class="search-bar">
+            <label for="search-input">
+                <i class="fa fa-search search-icon"></i>
+            </label>
+            <label>
+                <i id="speech-icon" class="fa fa-microphone speech-icon"></i>
+            </label>
+            <input id="search-input" class="search-input" placeholder="Tìm kiếm thành phố ..."/>
+        </div>
+        <div class="info-wraper">
+            <p id="city-name" class="city-name">_ _</p>
+            <p id="weather-status" class="weather-status">_ _</p>
+            <img id="weather-icon" class="weather-icon" src="http://openweathermap.org/img/wn/10d@2x.png"/>
+            <p id="temperature" class="temperature">_ _</p>
+        </div>
+    </div>
+    <div class="additional-section">
+        <div class="row">
+            <div class="item">
+                <div class="label">Mặt trời mọc</div>
+                <div id="sunrise" class="value">_ _</div>
+            </div>
+            <div class="item">
+                <div class="label">Mặt trời lặn</div>
+                <div id="sunset" class="value">_ _</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="item">
+                <div class="label">Độ ẩm</div>
+                <div id="humidity" class="value">_ _</div>
+            </div>
+            <div class="item">
+                <div class="label">Gió</div>
+                <div id="win-speed" class="value">_ _</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
